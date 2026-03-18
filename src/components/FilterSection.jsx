@@ -22,6 +22,7 @@ const FilterSection = () => {
         {statuses &&
           statuses.map((data, i) => (
             <FilterCard
+              key={i}
               data={data}
               category={category}
               setCategory={setCategory}

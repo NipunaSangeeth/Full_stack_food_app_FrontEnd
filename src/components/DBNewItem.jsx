@@ -47,6 +47,7 @@ const DBNewItem = () => {
       },
       (error) => {
         dispatch(alertDanger(`Error : ${error}`));
+        console.log(error);
         setTimeout(() => {
           dispatch(alertNull());
         }, 3000);
